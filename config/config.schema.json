@@ -1,0 +1,123 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "force": {
+        "type": "boolean"
+      },
+      "log": {
+        "type": "string"
+      },
+      "delete_non_existing": {
+        "type": "boolean"
+      },
+      "top_dir": {
+        "type": "string"
+      },
+      "smb": {
+        "type": "object",
+        "properties": {
+          "shares": {
+            "type": "array",
+            "items": {}
+          },
+          "hide": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "shares",
+          "hide"
+        ]
+      },
+      "nfs": {
+        "type": "object",
+        "properties": {
+          "exports": {
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "exports"
+        ]
+      },
+      "quota": {
+        "type": "object",
+        "properties": {
+          "directories": {
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "directories"
+        ]
+      },
+      "s3": {
+        "type": "object",
+        "properties": {
+          "buckets": {
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "buckets"
+        ]
+      },
+      "source": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "access_token": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "address",
+          "username",
+          "password",
+          "access_token"
+        ]
+      },
+      "destination": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "access_token": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "address",
+          "username",
+          "password",
+          "access_token"
+        ]
+      }
+    },
+    "required": [
+      "smb",
+      "nfs",
+      "quota",
+      "source",
+      "destination"
+    ]
+  }
