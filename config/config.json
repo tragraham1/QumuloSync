@@ -1,0 +1,33 @@
+{
+	"force" : true,
+	"log" : "DEBUG",
+	"delete_non_existing": false,
+	"top_dir": "",
+	"skip_replication": true,
+	"smb": {
+			"shares": ["all"],
+			"hide": false
+	},
+	"nfs": {
+			"exports": ["all"]
+	},
+	"s3": {
+		"buckets": ["all"]
+
+	},
+	"quota": {
+			"directories": ["all"]
+	},
+	"source" : {
+		"address" : "CLUSTER_ADDRESS",
+		"username" : "admin", 
+		"password" : "PASSWORD",
+        "access_token": ""
+	},
+	"destination" : {
+    	"address" : "CLUSTER_ADDRESS",
+		"username" : "", 
+		"password" : "",
+        "access_token" : "ACCESS_TOKEN"
+	}
+}
