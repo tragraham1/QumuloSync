@@ -258,6 +258,9 @@ For help planning the deployment see the table of documents below.
 |[Using Qumulo Core Access Tokens](https://docs.qumulo.com/administrator-guide/external-services/using-access-tokens.html) | Details on Qumulo Access Token|
 |[Role-Based Access Control (RBAC) with Qumulo Core](https://care.qumulo.com/hc/en-us/articles/360036591633-Role-Based-Access-Control-RBAC-with-Qumulo-Core) | Details on Qumulo Role-Based Access Control|
 
+## Support Statement
+
+This tool provides Qumulo customers more flexibility using Qumulo API's capabilities. Please use GitHub Issues or your Qumulo Care Slack channel for feature requests and software deficiencies. We will address these as soon as possible, but there are no specific SLAs on response times for inquiries regarding functionality, performance, or perceived software deficiencies.
 
 ## Help
 
