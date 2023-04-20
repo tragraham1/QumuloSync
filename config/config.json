@@ -5,29 +5,31 @@
 	"top_dir": "",
 	"skip_replication": true,
 	"smb": {
-			"shares": ["all"],
-			"hide": false
+		"shares": ["all"],
+		"hide": false
 	},
 	"nfs": {
-			"exports": ["all"]
+		"exports": ["all"]
 	},
 	"s3": {
 		"buckets": ["all"]
 
 	},
 	"quota": {
-			"directories": ["all"]
+		"directories": ["all"]
 	},
 	"source" : {
 		"address" : "CLUSTER_ADDRESS",
+		"port" : 8000,
 		"username" : "admin", 
 		"password" : "PASSWORD",
-        "access_token": ""
+        	"access_token": ""
 	},
 	"destination" : {
-    	"address" : "CLUSTER_ADDRESS",
+    		"address" : "CLUSTER_ADDRESS",
+		"port" : 8000,
 		"username" : "", 
 		"password" : "",
-        "access_token" : "ACCESS_TOKEN"
+        	"access_token" : "ACCESS_TOKEN"
 	}
 }
